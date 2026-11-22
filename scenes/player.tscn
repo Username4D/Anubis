@@ -15,3 +15,6 @@ points = PackedVector2Array(-32, -28, -24, 0, -32, 28, 32, 0)
 closed = true
 default_color = Color(1, 0.41568628, 0.1254902, 1)
 joint_mode = 2
+
+[node name="hitbox" type="CollisionPolygon2D" parent="." unique_id=1036880663]
+polygon = PackedVector2Array(-32, -28, -24, 0, -32, 28, 32, 0)
