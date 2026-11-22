@@ -11,7 +11,15 @@ script = ExtResource("1_v182c")
 tile_map_data = PackedByteArray("AAADAAQAAAABAAMAAAAEAAQAAAABAAMAAAAEAAMAAAABAAMAAAAFAAMAAAABAAMAAAADAAAAAAABAAMAAAAEAAAAAAABAAMAAAAEAAEAAAABAAMAADAIAAAAAAABAAMAADAIAAEAAAABAAMAADAJAAAAAAABAAMAADAJAAEAAAABAAMAADAKAAAAAAABAAMAADAKAAEAAAABAAMAADALAAAAAAABAAMAADALAAMAAAABAAMAAGAMAAQAAAABAAMAAGAOAAQAAAABAAMAAGANAAQAAAABAAMAAGA=")
 tile_set = ExtResource("3_qnlrd")
 
+[node name="player_trail" type="Line2D" parent="." unique_id=1622159016]
+unique_name_in_owner = true
+points = PackedVector2Array(256, 320, 256, 320)
+default_color = Color(0.105882354, 0.105882354, 0.13725491, 1)
+joint_mode = 2
+begin_cap_mode = 2
+
 [node name="player" parent="." unique_id=1818557118 instance=ExtResource("2_qnlrd")]
+unique_name_in_owner = true
 position = Vector2(256, 320)
 
 [node name="tilemap" type="TileMapLayer" parent="." unique_id=1004573290]
@@ -29,3 +37,5 @@ offset_left = -800.0
 offset_top = -352.0
 offset_right = 1568.0
 offset_bottom = 352.0
+
+[connection signal="request_trail_point" from="player" to="." method="_on_player_request_trail_point"]
