@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var direction = -1
-var movement_speed = 250
+@export var movement_speed = 250
 
 signal request_trail_point
 
