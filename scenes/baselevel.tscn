@@ -7,9 +7,8 @@
 [node name="baselevel" type="Node2D" unique_id=264567544]
 script = ExtResource("1_v182c")
 
-[node name="tilemap_bg" type="TileMapLayer" parent="." unique_id=265323257]
-tile_map_data = PackedByteArray("AAADAAQAAAABAAMAAAAEAAQAAAABAAMAAAAEAAMAAAABAAMAAAAFAAMAAAABAAMAAAADAAAAAAABAAMAAAAEAAAAAAABAAMAAAAEAAEAAAABAAMAADAIAAAAAAABAAMAADAIAAEAAAABAAMAADAJAAAAAAABAAMAADAJAAEAAAABAAMAADAKAAAAAAABAAMAADAKAAEAAAABAAMAADALAAAAAAABAAMAADALAAMAAAABAAMAAGAMAAQAAAABAAMAAGAOAAQAAAABAAMAAGANAAQAAAABAAMAAGA=")
-tile_set = ExtResource("3_qnlrd")
+[node name="bg_parts" type="Node2D" parent="." unique_id=788579037]
+unique_name_in_owner = true
 
 [node name="player_trail" type="Line2D" parent="." unique_id=1622159016]
 unique_name_in_owner = true

@@ -1,0 +1,11 @@
+[gd_scene format=4 uid="uid://dyf54cq0e8vir"]
+
+[ext_resource type="PackedScene" uid="uid://1srbxxmggi74" path="res://scenes/base_background_part.tscn" id="1_7vm6r"]
+
+[node name="base_background_part" unique_id=905711664 instance=ExtResource("1_7vm6r")]
+
+[node name="level_end" parent="." index="0" unique_id=1688198414]
+position = Vector2(2560, 0)
+
+[node name="tilemap" parent="." index="1" unique_id=290811897]
+tile_map_data = PackedByteArray("AAABAAMAAAAEAAMAAAABAAQAAAAEAAMAAAAFAAAAAAAEAAMAAAAJAAAAAAAEAAMAAAAJAAEAAAAEAAMAAAALAAMAAAAEAAMAAAALAAQAAAAEAAMAAAALAAUAAAAEAAMAAAAMAAMAAAAEAAMAAAAMAAQAAAAEAAMAAAAMAAUAAAAEAAMAAAAPAAAAAAAEAAMAAAAQAAAAAAAEAAMAAAAPAAEAAAAEAAMAAAAQAAEAAAAEAAMAAAATAAUAAAAEAAMAAAATAAYAAAAEAAMAAAATAAMAAAAEAAMAAAATAAQAAAAEAAMAAAAGAAQAAAAEAAMAAAA=")

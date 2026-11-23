@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://1srbxxmggi74"]
+
+[ext_resource type="TileSet" uid="uid://cb1ba12bkg6us" path="res://assets/tiles.tres" id="1_4lgro"]
+[ext_resource type="Script" uid="uid://bejw0jtulgpgm" path="res://scripts/level_part_base.gd" id="1_bo6nm"]
+
+[node name="base_background_part" type="Node2D" unique_id=905711664]
+script = ExtResource("1_bo6nm")
+
+[node name="level_end" type="Marker2D" parent="." unique_id=1688198414]
+unique_name_in_owner = true
+position = Vector2(2432, 0)
+
+[node name="tilemap" type="TileMapLayer" parent="." unique_id=290811897]
+tile_set = ExtResource("1_4lgro")
